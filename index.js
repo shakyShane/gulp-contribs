@@ -36,10 +36,20 @@ function write(data, result, matches) {
     return false;
 }
 
+/**
+ * Helper for correct plugin errors
+ * @param context
+ * @param msg
+ */
 function error(context, msg) {
     context.emit("error", new gutil.PluginError(PLUGIN_NAME, msg));
 }
 
+/**
+ * @param {String} [start]
+ * @param {String} [end]
+ * @returns {{start: (*|string), end: (*|string)}}
+ */
 function getMatches(start, end) {
     var matches = {
         start: start || defaults.start,
