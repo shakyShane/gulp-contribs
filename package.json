@@ -1,6 +1,6 @@
 {
   "name": "gulp-contribs",
-  "description": "Keep track of items via heartbeats",
+  "description": "Give your open-source contributors some credit - automatically list them in your readme.md, or anywhere else.",
   "version": "0.0.1",
   "homepage": "https://github.com/shakyshane/gulp-contribs",
   "author": {
