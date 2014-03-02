@@ -30,7 +30,7 @@ function getRegex(matches) {
 function write(data, result, matches) {
     if (data.match(matches.regex)) {
         return data.replace(matches.regex, function () {
-            return matches.start + "\n\n```\n" + result + "\n```\n\n" + matches.end;
+            return matches.start + "\n\n```\n" + result + "```\n\n" + matches.end;
         });
     }
     return false;

@@ -19,7 +19,7 @@ describe("Writing contributors to a file", function () {
 
         stream.on("data", function (file) {
             var actual = file.contents.toString();
-            var exepected = "## Contributors\n\n```\nShane Osbourne\n```\n\n## License";
+            var exepected = "## Contributors\n\n```\nShane Osbourne```\n\n## License";
             assert.equal(actual, exepected);
             done();
         });
@@ -34,7 +34,7 @@ describe("Writing contributors to a file", function () {
 
         stream.on("data", function (file) {
             var actual = file.contents.toString();
-            var exepected = "START\n\n```\nShane Osbourne\n```\n\nEND";
+            var exepected = "START\n\n```\nShane Osbourne```\n\nEND";
             assert.equal(actual, exepected);
             done();
         });

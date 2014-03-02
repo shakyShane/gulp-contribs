@@ -16,7 +16,7 @@ gulp.task('test', function () {
 
 gulp.task('contribs', function () {
     gulp.src('README.md')
-        .pipe(contribs("##Contributors", "##License"))
+        .pipe(contribs("## Contributors", "## License"))
         .pipe(gulp.dest("./"))
 
 });

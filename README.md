@@ -8,7 +8,8 @@ Install it locally to your project.
 `npm install gulp-contribs`
 
 ## Example
-With no paramaters, the default start and end points (`## Contributors` & `## License`) will be used.
+With no parameters, the default start and end points (`## Contributors` & `## License`) will be used.
+Check [this example](https://github.com/shakyShane/browser-sync#contributors)
 
 ```js
 var gulp = require('gulp');
@@ -35,13 +36,6 @@ gulp.task('contribs', function () {
         .pipe(contribs("## Contributors List", "## License"))
         .pipe(gulp.dest("./"))
 });
-```
-
-## Contributors
-
-```
-     1	Shane Osbourne
-
 ```
 
 ## License
