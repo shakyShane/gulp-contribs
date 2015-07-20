@@ -100,7 +100,7 @@ module.exports = function (start, end) {
         };
 
         // check it's a Git Repo
-        childProcess.exec("git log", function (err) {
+        childProcess.exec("git status", function (err) {
             if (err) {
                 error(stream, "A Git repository was not found here.");
                 return cb();
